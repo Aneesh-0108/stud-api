@@ -2,9 +2,9 @@ const mongoose = require("mongoose")
 
 const studentSchema = new mongoose.Schema({
     name: String,
-    id: Number,
+    id: String,
     course: String,
-    marks: Number
+    email: String
 })
 
 module.exports = mongoose.model("Student", studentSchema)
